@@ -29,7 +29,7 @@ final class SCEMH
 		global $modSettings;
 
 		// Resize Max Height
-		$sce_options['resizeMaxHeight'] = !empty($modSettings['scemh_resizeMaxHeight']) ? (int) $modSettings['scemh_resizeMaxHeight'] : 450;
+		$sce_options['resizeMaxHeight'] = !empty($modSettings['scemh_resizeMaxHeight']) ? (int) $modSettings['scemh_resizeMaxHeight'] : null;
 	}
 
 	/**
