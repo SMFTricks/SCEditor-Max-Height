@@ -1,5 +1,8 @@
 # Changelog
 
+#### 1.0.1 - 08 May 2022
+- ![New Feature](https://smftricks.com/assets/changelog/tag--plus.png) Add setting to use an infinite size instead.
+
 #### 1.0 - 08 May 2022
 - ![New Feature](https://smftricks.com/assets/changelog/tag--plus.png) Initial release.
 

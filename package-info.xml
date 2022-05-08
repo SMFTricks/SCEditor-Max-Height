@@ -4,7 +4,7 @@
 <package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
 	<id>smftricks:SCEMH</id>
 	<name>SCEditor Max Height</name>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<type>modification</type>
 	<install for="2.1.*">
 		<readme lang="english" parsebbc="true" type="file">readme/readme.english.txt</readme>

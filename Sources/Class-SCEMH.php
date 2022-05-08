@@ -9,7 +9,7 @@
  * @copyright 2022 smftricks
  * @license https://opensource.org/licenses/MPL-2.0 Mozilla Public License 2.0
  *
- * @version 1.0
+ * @version 1.0.1
  */
 
 /**
@@ -29,7 +29,7 @@ final class SCEMH
 		global $modSettings;
 
 		// Resize Max Height
-		$sce_options['resizeMaxHeight'] = !empty($modSettings['scemh_resizeMaxHeight']) ? (int) $modSettings['scemh_resizeMaxHeight'] : null;
+		$sce_options['resizeMaxHeight'] = (!empty($modSettings['scemh_infinite_maxHeight']) ? -1 : (!empty($modSettings['scemh_resizeMaxHeight']) ? (int) $modSettings['scemh_resizeMaxHeight'] : null));
 	}
 
 	/**
@@ -46,5 +46,6 @@ final class SCEMH
 		loadLanguage('SCEMH');
 
 		$config_vars[] = array('int', 'scemh_resizeMaxHeight', 'subtext' => $txt['scemh_resizeMaxHeight_desc']);
+		$config_vars[] = array('check', 'scemh_infinite_maxHeight', 'subtext' => $txt['scemh_infinite_maxHeight_desc']);
 	}
 }
